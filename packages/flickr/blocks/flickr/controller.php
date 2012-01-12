@@ -9,7 +9,8 @@ class FlickrBlockController extends BlockController {
 
 	protected $btTable = 'btFlickr';
 	protected $btInterfaceWidth = "400";
-	protected $btInterfaceHeight = "170";
+	protected $btInterfaceHeight = "310";
+	protected $btWrapperClass = 'ccm-ui';
 	
 	public $itemsToDisplay = "5";  
 	public $title = "";	
