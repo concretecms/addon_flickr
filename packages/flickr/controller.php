@@ -6,7 +6,7 @@ class FlickrPackage extends Package {
 
 	protected $pkgHandle = 'flickr';
 	protected $appVersionRequired = '5.5';
-	protected $pkgVersion = '1.2';
+	protected $pkgVersion = '1.2.1-dev';
 	
 	public function getPackageDescription() {
 		return t("Display photos from the website Flickr.com");
@@ -23,8 +23,4 @@ class FlickrPackage extends Package {
 		BlockType::installBlockTypeFromPackage('flickr', $pkg);
 		
 	}
-
-
-
-
 }
