@@ -85,7 +85,7 @@ class FlickrBlockController extends BlockController {
 			$resizedFileCacheName='flickr_cached_img_'.$photo_key.'_'.$this->maxWidth.'x'.$this->maxHeight.$file_ext;
 			$fileCachePathRel=REL_DIR_FILES_CACHE.'/'.$resizedFileCacheName;		
 			if( !file_exists(DIR_FILES_CACHE.'/'.$resizedFileCacheName) ){
-				echo LibraryFileBlockController::createImage(DIR_FILES_CACHE.'/'.$fileCacheName,DIR_FILES_CACHE.'/'.$resizedFileCacheName,intval($this->maxWidth),intval($this->maxHeight));
+            echo Loader::helper('image')->create(DIR_FILES_CACHE.'/'.$fileCacheName,DIR_FILES_CACHE.'/'.$resizedFileCacheName,intval($this->maxWidth),intval($this->maxHeight));
 			}
 		}
 		return $fileCachePathRel;
