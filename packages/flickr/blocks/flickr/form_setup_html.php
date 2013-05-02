@@ -33,5 +33,11 @@
 				<input id="ccm_flickr_max_height" name="maxHeight" value="<?php echo $controllerObj->maxHeight?>" maxlength="8" type="text" >
 			</div>
 		</div>
+		<div class="clearfix">
+			<label for="launchInNewWindow"><?php echo t('Open In New Window?') ?></label>
+			<div class="input">
+				<input type="checkbox" name="launchInNewWindow" value="1" <?php echo $launchInNewWindow ? 'checked' : 0 ?> />
+			</div>
+		</div>
 	</fieldset>
 </div>

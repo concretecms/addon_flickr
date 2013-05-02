@@ -6,7 +6,7 @@ class FlickrPackage extends Package {
 
 	protected $pkgHandle = 'flickr';
 	protected $appVersionRequired = '5.5';
-	protected $pkgVersion = '1.2.1';
+	protected $pkgVersion = '1.3dev';
 	
 	public function getPackageDescription() {
 		return t("Display photos from the website Flickr.com");
