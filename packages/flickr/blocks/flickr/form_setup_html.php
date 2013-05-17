@@ -36,7 +36,7 @@
 		<div class="clearfix">
 			<label for="launchInNewWindow"><?php echo t('Open In New Window?') ?></label>
 			<div class="input">
-				<input type="checkbox" name="launchInNewWindow" value="1" <?php echo $launchInNewWindow ? 'checked' : 0 ?> />
+				<input type="checkbox" name="launchInNewWindow" value="1" <?php echo $launchInNewWindow ? 'checked' : '' ?> />
 			</div>
 		</div>
 	</fieldset>
