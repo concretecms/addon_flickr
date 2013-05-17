@@ -17,5 +17,8 @@
 		</field>
 		<field name="maxHeight" type="C" size="8">
 		</field>				
+		<field name="launchInNewWindow" type="I1">
+			<default value="0" />
+		</field>
 	</table>
 </schema>

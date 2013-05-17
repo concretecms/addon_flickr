@@ -62,6 +62,7 @@ class FlickrBlockController extends BlockController {
 		$args['title'] = isset($data['title']) ? $data['title'] : '';
 		$args['maxWidth'] = intval($data['maxWidth']) ;
 		$args['maxHeight'] = intval($data['maxHeight']) ;
+		$args['launchInNewWindow'] = isset($data['launchInNewWindow']) ? 1 : 0;
 		parent::save($args);
 	}
 	
